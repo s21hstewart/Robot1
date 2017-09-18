@@ -5,12 +5,14 @@
 task main()
 {
 	int speed = 10;
-	while(speed <= 100)
+	int speed2 = 15;
+	while(speed <= 200)
 	{
 		motor[left] = speed;
-		motor[right] = speed;
+		motor[right] = speed2;
 		wait1Msec(1000);
 
-		speed = speed + 10;
+		speed = speed + 5;
+		speed2 = speed2 + 10;
 }
 }
