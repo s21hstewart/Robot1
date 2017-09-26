@@ -32,13 +32,4 @@ task main()
 	motor[motorB]=80;
 	motor[motorC]=100;
 	wait1Msec(6000);
-	if(SensorValue(button) == 1)
-	{
-		motor[right]=-90;
-		motor[left]=-90;
-		motor[left]=100;
-		motor[right]=60;
-		wait1Msec(3500);
-	}
 
-}
