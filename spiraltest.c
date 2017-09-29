@@ -5,17 +5,21 @@
 
 task main()
 {
-	int speed = 60;
-	int speed2 = 100;
-	while(speed <= 800)
+	int speed = 15;
+	int speed2 = 5;
+	while(true)
 	{
 		motor[left] = speed;
 		motor[right] = speed2;
-		wait10Msec(10000);
+		wait10Msec(500);
 
-		speed = speed + 5;
-		speed2 = speed2;
-
+		speed = speed + 10;
+		speed2 = speed2 + 10;
+	if(mode == GOING)
+	{
+		if(getMotorEncoder(right)= 18000)
+		{
+			mode =
 }
 
 }
